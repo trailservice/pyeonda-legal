@@ -1,0 +1,40 @@
+/* 편다 법적 고지 페이지 공통 스타일 — 모바일에서도 읽기 좋게 최소한만. */
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+  max-width: 760px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+               'Malgun Gothic', 'Noto Sans KR', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #1a1d23;
+  background: #ffffff;
+  word-break: keep-all;
+}
+@media (prefers-color-scheme: dark) {
+  body { color: #e8ebf0; background: #111318; }
+  td, th { border-color: #2a2f38 !important; }
+  th { background: #1a1d23 !important; }
+  .meta { color: #8a93a6 !important; }
+  a { color: #6aa5ff; }
+}
+h1 { font-size: 26px; line-height: 1.35; margin: 0 0 8px; }
+h2 { font-size: 19px; margin: 40px 0 12px; padding-top: 4px; }
+h3 { font-size: 16px; margin: 24px 0 8px; }
+.meta { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+ul, ol { padding-left: 22px; }
+li { margin: 6px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid #d8dde5; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f4f6f9; font-weight: 700; }
+a { color: #1E6FFF; }
+.nav { margin-bottom: 28px; font-size: 14px; }
+.nav a { margin-right: 14px; }
+.callout {
+  border-left: 3px solid #1E6FFF;
+  padding: 10px 16px;
+  margin: 20px 0;
+  background: rgba(30, 111, 255, .06);
+}
